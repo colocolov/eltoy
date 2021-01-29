@@ -9,7 +9,7 @@
   &__first
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: start
   &__title
     width: 535px
     margin: 0
@@ -22,8 +22,8 @@
     letter-spacing: 0.03em
     color: $bl
   &__cards
-    // position: absolute
-    // top: 372px
+    position: absolute
+    top: 400px
     display: flex
   &__card
     width: 190px
@@ -69,71 +69,23 @@
       &::before
         content: ''
         position: absolute
-        top: -10px
+        top: -30px
         width: 600px
         height: 600px
-        background-image: url('../images/blobs/promo.svg')
+        background-image: url('../images/blobs/promo-fon.svg')
         background-repeat: no-repeat
-        animation-name: rotation
-        animation-duration: 4s
+        animation-name: promo-img
+        animation-duration: 4.5s
         animation-iteration-count: infinite
         animation-timing-function: linear
-      //  transform: rotate(45deg)
     &-fon
       position: absolute
       width: 100%
       height: 100%
       object-fit: cover
-      animation-name: rotation2
+      animation-name: promo-fon
       animation-duration: 2s
       animation-iteration-count: 1
       animation-timing-function: ease-out
 .clip
   clip-path: url(#svgPath)
-
-@keyframes rotation2
-  0%
-    opacity: 0
-    top: 15%
-    left: 15%
-    width: 85%
-    height: 85%
-    // transform: rotate(-300deg) translateX(-100px)
-  30%
-    // top: 20%
-    // left: 20%
-  50%
-    top: 15px
-    left: 5 px
-    opacity: 0.4
-    // width: 80%
-    // height: 80%
-  100%
-    top: 0
-    left: 0
-    opacity: 1
-    width: 100%
-    height: 100%
-    // transform: rotate(-360deg) translateX(10px)
-
-@keyframes rotation
-  0%
-    opacity: 1
-    top: 0
-    left: 0
-  25%
-    opacity: 0.75
-    top: 10px
-    left: -15px
-  50%
-    opacity: 1
-    top: 2px
-    left: 2px
-  75%
-    opacity: 0.75
-    top: 9px
-    left: 12px
-  100%
-    opacity: 1
-    top: 0px
-    left: 0px
