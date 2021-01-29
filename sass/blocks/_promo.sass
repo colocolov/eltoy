@@ -14,7 +14,7 @@
     width: 535px
     margin: 0
     margin-bottom: 35px
-    font-family: Exo 2
+    font-family: "Exo2-ExtraBold"
     font-style: normal
     font-weight: 700
     font-size: 58px
@@ -59,33 +59,27 @@
     justify-content: center
     margin-bottom: 21px
   &__image
-    // width: 600px
-    // height: 600px
     margin-right: 50px
+    width: 600px
+    height: 600px
+    position: relative
     &-wrapper
       position: relative
-      width: 600px
-      height: 600px
       &::before
         content: ''
         position: absolute
         top: -30px
         width: 600px
         height: 600px
-        background-image: url('../images/blobs/promo-fon.svg')
-        background-repeat: no-repeat
-        animation-name: promo-img
-        animation-duration: 4.5s
-        animation-iteration-count: infinite
-        animation-timing-function: linear
+        background: url('../images/blobs/promo-fon.svg') no-repeat
+        animation: promo-img 4.5s infinite linear
     &-fon
       position: absolute
       width: 100%
       height: 100%
       object-fit: cover
-      animation-name: promo-fon
-      animation-duration: 2s
-      animation-iteration-count: 1
-      animation-timing-function: ease-out
+      // animation: promo-fon 2s 1 ease-out
 .clip
   clip-path: url(#svgPath)
+  // width: 406px
+  // height: 406px
