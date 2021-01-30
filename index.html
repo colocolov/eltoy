@@ -70,7 +70,16 @@
           <div class="promo__image">
             <div class="promo__image-wrapper">
               <img class="clip promo__image-fon" src="images/01.jpg" alt="" />
-              <svg width="600" height="600">
+
+              <svg>
+                <!-- <defs> -->
+                <clipPath id="svgPath">
+                  <use xlink:href="images/blobs/blobs.svg#promo-photo"></use>
+                </clipPath>
+                <!-- </defs> -->
+              </svg>
+
+              <!-- <svg width="600" height="600">
                 <defs>
                   <clipPath id="svgPath">
                     <path
@@ -82,7 +91,7 @@
                     />
                   </clipPath>
                 </defs>
-              </svg>
+              </svg> -->
             </div>
           </div>
           <!-- /.promo__image -->
