@@ -64,15 +64,16 @@
     height: 600px
     position: relative
     &-wrapper
-      position: relative
+      // position: relative
       &::before
         content: ''
         position: absolute
         top: -30px
         width: 600px
         height: 600px
+        // background-image: url('../images/blobs/promo-fon.svg')
         background-image: url('../images/blobs/blobs.svg#promofon-view')
-        fill: #d3d3d3
+        // fill: #000000
         // border: 2px solid red
         animation: promo-img 4.5s infinite linear
     &-fon
@@ -81,7 +82,11 @@
       height: 100%
       object-fit: cover
       // animation: promo-fon 2s 1 ease-out
+  &_photo
+    width: 597px
+    height: 597px
+
 .clip
-  clip-path: url(#svgPath)
+  clip-path: url(#svgPromo)
   // width: 406px
   // height: 406px
