@@ -20,7 +20,7 @@
             <ul class="navbar__list">
               <!-- <li class="navbar__item"><a href="#about" class="navbar__link">Об изделии</a></li> -->
               <li class="navbar__item"><a href="#my-works" class="navbar__link">Мои работы</a></li>
-              <li class="navbar__item"><a href="#" class="navbar__link">Из чего состоит</a></li>
+              <li class="navbar__item"><a href="#consist" class="navbar__link">Из чего состоит</a></li>
               <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
               <li class="navbar__item"><a href="#reviews" class="navbar__link">Отзывы</a></li>
               <li class="navbar__item"><a href="#price" class="navbar__link">Цены</a></li>
@@ -51,7 +51,7 @@
             <div class="promo__cards">
               <div class="promo__card">
                 <div class="promo__icon">
-                  <img src="images/bg/yarn.svg" alt="иконка: клубок" />
+                  <img src="images/icons/yarn.svg" alt="иконка: клубок" />
                 </div>
                 <span class="promo__card_title">Ручная <br />работа</span>
                 <p class="promo__card_description">Каждое изделие изготавливается только ручную</p>
@@ -59,7 +59,7 @@
               <!-- /.promo__card -->
               <div class="promo__card">
                 <div class="promo__icon">
-                  <img src="images/bg/eco.svg" alt="иконка: листочки" />
+                  <img src="images/icons/eco.svg" alt="иконка: листочки" />
                 </div>
                 <span class="promo__card_title">Натуральные материалы</span>
                 <p class="promo__card_description">Экологически безопасные для детей</p>
@@ -135,12 +135,12 @@
           <div class="works__photos">
             <div class="works__photos-tabs">
               <button class="works__type works__type_active" value="all" onclick="doAction(this.value)">Все</button>
-              <button class="works__type" value="chewer" onclick="doAction(this.value)">Грызунки</button>
-              <button class="works__type" value="beanbag" onclick="doAction(this.value)">Погремушки</button>
-              <button class="works__type" value="set" onclick="doAction(this.value)">Наборы</button>
+              <button class="works__type" value="chewers" onclick="doAction(this.value)">Грызунки</button>
+              <button class="works__type" value="beanbags" onclick="doAction(this.value)">Погремушки</button>
+              <button class="works__type" value="sets" onclick="doAction(this.value)">Наборы</button>
             </div>
             <div class="works__photos-all">
-              <div class="works__photo" data-category="chewer">
+              <div class="works__photo" data-category="chewers">
                 <a href="images/works/01.jpg" class="works__photo-link"
                   ><img src="images/works/01.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -149,7 +149,7 @@
                   </div>
                 </a>
               </div>
-              <div class="works__photo" data-category="beanbag">
+              <div class="works__photo" data-category="beanbags">
                 <a href="images/works/02.jpg" class="works__photo-link"
                   ><img src="images/works/02.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -158,7 +158,7 @@
                   </div></a
                 >
               </div>
-              <div class="works__photo" data-category="chewer">
+              <div class="works__photo" data-category="chewers">
                 <a href="images/works/03.jpg" class="works__photo-link"
                   ><img src="images/works/03.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -167,7 +167,7 @@
                   </div></a
                 >
               </div>
-              <div class="works__photo" data-category="chewer">
+              <div class="works__photo" data-category="chewers">
                 <a href="images/works/04.jpg" class="works__photo-link">
                   <img src="images/works/04.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -176,7 +176,7 @@
                   </div></a
                 >
               </div>
-              <div class="works__photo" data-category="set">
+              <div class="works__photo" data-category="sets">
                 <a href="images/works/05.jpg" class="works__photo-link"
                   ><img src="images/works/05.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -185,7 +185,7 @@
                   </div></a
                 >
               </div>
-              <div class="works__photo" data-category="set">
+              <div class="works__photo" data-category="sets">
                 <a href="images/works/06.jpg" class="works__photo-link"
                   ><img src="images/works/06.jpg" alt="фото: " class="works__img" />
                   <div class="works__photo-info">
@@ -199,6 +199,55 @@
         </div>
       </div>
     </section>
+    <!-- /.works -->
+    <section class="consist" id="consist">
+      <div class="container consist__container">
+        <div class="consist__first">
+          <h2 class="heading consist__title">Что входит в изделие?</h2>
+          <div class="consist__tabs">
+            <button class="consist__type consist__type_active" value="chewer" onclick="doAction2(this.value)">
+              Грызунок
+            </button>
+            <button class="consist__type" value="beanbag" onclick="doAction2(this.value)">Погремушка</button>
+            <button class="consist__type" value="toy" onclick="doAction2(this.value)">Игрушка</button>
+          </div>
+          <div class="consist_descriptions">
+            <div class="consist__info" data-category="chewer">
+              <p class="text consist__text">
+                Состав грызунка определеться по индивидуальному предпочтению. В каждое изделие входит большая фигурка,
+                которая являеться основной игрушкой малыша. Лента состоит из набора различных фигурок и букв, образующих
+                имя малыша.
+              </p>
+              <p class="text consist__text">
+                Все изделия изготовлены из экологических чистых материалов и не вызывают аллергичекие реакции. Имеют
+                соответсвующие сертификаты.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="consist__second">
+          <div class="consist__image-wrapper">
+            <img class="consist__clip consist__image-fon" src="images/03.jpg" alt="фото: ребенок с игрушкой" />
+            <svg width="0" height="0">
+              <defs>
+                <clipPath id="svgConsist" clipPathUnits="objectBoundingBox">
+                  <path
+                    d="M0.523,0.002 C0.605,-0.013,0.681,0.048,0.754,0.101 C0.839,0.162,0.941,0.21,0.98,0.331 C1,0.454,0.995,0.6,0.954,0.723 C0.916,0.837,0.848,0.932,0.763,0.981 C0.687,1,0.605,0.979,0.523,0.974 C0.446,0.968,0.371,0.986,0.3,0.95 C0.207,0.903,0.107,0.854,0.058,0.738 C0.005,0.612,-0.028,0.436,0.032,0.316 C0.093,0.193,0.236,0.243,0.334,0.18 C0.405,0.135,0.445,0.017,0.523,0.002"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="consist__button">
+              <a href="https://www.youtube.com/watch?v=ZI_HOkDai00" class="consist__video"
+                ><img class="consist__btn" src="images/icons/play.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.consist -->
+    <!-- подключение скриптов -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/main.js"></script>
