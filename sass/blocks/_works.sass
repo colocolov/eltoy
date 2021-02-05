@@ -2,7 +2,6 @@
   margin-bottom: 250px
   &__first
     display: flex
-    // justify-content: center
     flex-direction: column
     padding-bottom: 250px
   &__heading
@@ -20,7 +19,7 @@
       margin-left: auto // выравнивание по правому краю
       display: inline-flex
       justify-content: space-between
-      margin-bottom: 16px
+      margin-bottom: 20px
       background-color: $pink_l
       border-radius: 30px
       text-align: right
@@ -37,17 +36,18 @@
     cursor: pointer
     z-index: 3
     &:first-child
-      margin-left: 30px
+      margin-left: 20px
     &:last-child
-      margin-right: 30px
+      margin-right: 20px
     &_active
-      font-weight: 700
       color: $bgc
       height: 60px
-      width: 100%
+      width: 90%
       background-color: $pink
-      padding: 14px 30px
+      padding: 14px 25px
       border-radius: 30px
+      margin: 0
+      transition: all 200ms ease-out
       &:first-child
         margin-left: 0
       &:last-child
@@ -116,3 +116,5 @@
     width: 100%
     height: 100%
     object-fit: cover
+  &__hide
+    display: none
