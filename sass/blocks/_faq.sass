@@ -1,0 +1,54 @@
+.faq
+  background: $bl-l url(../images/bg/stars.svg) repeat 0 0
+  &__first
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 92px
+    padding-bottom: 118px
+  &__heading
+    margin: 0
+    margin-bottom: 20px
+  &__subheading
+    margin: 0
+    margin-bottom: 50px
+  &__items
+    width: 820px
+  &__item
+    position: relative
+    background-color: $bgc
+    padding: 15px 30px
+    margin-bottom: 20px
+    box-shadow: 0px 7px 20px rgba(94, 189, 228, 0.25)
+    border-radius: 10px
+    &::before
+      position: absolute
+      top: 16px
+      right: 25px
+      content: ''
+      background: url(../images/icons/open.svg) no-repeat 0 0
+      height: 34px
+      width: 35px
+  &__title
+    margin: 0
+    font-weight: normal
+    font-size: 24px
+    line-height: 36px
+    color: $head
+  &__text
+    margin: 0
+    font-weight: 300
+    font-size: 18px
+    line-height: 28px
+    color: $text
+  &__active
+    margin-top: 15px
+    margin-bottom: 20px
+    &::before
+      position: absolute
+      top: 30px
+      right: 31px
+      content: ''
+      // background: url(../images/icons/close.svg) no-repeat 0 0
+      height: 20px
+      width: 20px

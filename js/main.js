@@ -1,7 +1,33 @@
 // popup окна
 $(document).ready(function () {
-  $(".works__photo-link").magnificPopup({ type: "image" });
-  $(".consist__video").magnificPopup({ type: "video" });
+  $(".works__photo-link").magnificPopup({
+    type: "image",
+    mainClass: "mfp-with-zoom",
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: "ease-in-out",
+      opener: function (openerElement) {
+        return openerElement.is("img") ? openerElement : openerElement.find("img");
+      },
+    },
+  });
+  $(".consist__video").magnificPopup({
+    type: "iframe",
+    iframe: {
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+          id: function (url) {
+            var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+            if (!m || !m[1]) return null;
+            return m[1];
+          },
+          src: "//www.youtube.com/embed/%id%?autoplay=1",
+        },
+      },
+    },
+  });
 });
 //-----
 
