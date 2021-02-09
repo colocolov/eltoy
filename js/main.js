@@ -1,5 +1,6 @@
 // popup окна
 $(document).ready(function () {
+  // popup окно
   $(".works__photo-link").magnificPopup({
     type: "image",
     mainClass: "mfp-with-zoom",
@@ -28,8 +29,21 @@ $(document).ready(function () {
       },
     },
   });
+  //-----
+
+  // табы для состава
+  $("ul.consist__caption").on("click", "li:not(.consist__type_active)", function () {
+    $(this)
+      .addClass("consist__type_active")
+      .siblings()
+      .removeClass("consist__type_active")
+      .closest("div.consist__first")
+      .find("div.consist__info")
+      .removeClass("consist__info-active")
+      .eq($(this).index())
+      .addClass("consist__info-active");
+  });
 });
-//-----
 
 // фильтр последних работ
 let works = document.querySelectorAll(".works__photo");
