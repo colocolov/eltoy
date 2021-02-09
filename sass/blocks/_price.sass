@@ -6,7 +6,7 @@
     padding: 120px 0
   &__heading
     margin: 0
-    margin-bottom: 20px
+    margin-bottom: 10px
     text-align: center
   &__subheading
     margin: 0
@@ -20,24 +20,27 @@
     position: relative
     width: 300px
     height: 300px
+    margin-bottom: 35px
     &::before
       content: ''
       position: absolute
-      width: 300px
-      height: 300px
+      width: 400px
+      height: 400px
       background: url('../images/blobs/price-wrp.svg') no-repeat center center
-      // left: -20px
-      // top: -20px
+      left: -40px
+      top: -40px
       animation: price-pulse-1 2.5s infinite linear
-    &:nth-child(2)
-      animation: price-pulse-2 2.5s infinite linear
   &__fon
     width: 300px
     height: 300px
     object-fit: cover
     // animation: fon 2s 1 ease-out
-  &__clip
-    clip-path: url(#svgPrice)
+  &-first
+    clip-path: url(#svgPrice1)
+  &-second
+    clip-path: url(#svgPrice2)
+  &-third
+    clip-path: url(#svgPrice3)
   &__title
     font-weight: normal
     font-size: 36px

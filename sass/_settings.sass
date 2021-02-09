@@ -1,8 +1,9 @@
-*
+*, *::before, *::after
   box-sizing: border-box
 html
   scroll-behavior: smooth
 body
+  overflow-x: hidden
   font-family: 'Nunito-Regular', sans-serif
   font-weight: 400
   background-color: $bgc
@@ -10,15 +11,19 @@ body
 a
   text-decoration: none
 ul, li
+  list-style: none
   margin: 0
   padding: 0
+h1,h2,h3
+  margin: 0
 .container
   max-width: 1240px
   margin: 0 auto
+
 .heading
   font-family: "Exo2-ExtraBold", sans-serif
-  font-style: normal
   font-weight: 800
+  font-style: normal
   font-size: 48px
   line-height: 60px
   letter-spacing: 0.02em
@@ -34,8 +39,8 @@ ul, li
   text-transform: uppercase
 .text
   font-family: 'Nunito-Light', sans-serif
-  font-style: normal
   font-weight: 300
+  font-style: normal
   font-size: 18px
   line-height: 28px
   color: $text
