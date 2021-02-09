@@ -16,10 +16,12 @@
     margin-left: auto // выравнивание по правому краю
     display: inline-flex
     justify-content: space-between
+    align-items: center
     margin-bottom: 20px
     background-color: $bgc
     border-radius: 30px
     text-align: right
+    height: 60px
   &__type
     // position: relative
     margin: 0 15px
@@ -37,13 +39,17 @@
     &:last-child
       margin-right: 20px
     &_active
+      display: flex
+      align-items: center
       color: $bgc
-      height: 60px
-      width: 90%
-      background-color: $pink
-      padding: 14px 25px
-      border-radius: 30px
       margin: 0
+      padding-right: 25px
+      padding-left: 25px
+      // width: 90%
+      height: 100%
+      background-color: $pink
+      // padding: 14px 25px
+      border-radius: 30px
       transition: all 200ms ease-out
       &:first-child
         margin-left: 0

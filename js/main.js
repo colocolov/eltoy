@@ -43,6 +43,15 @@ $(document).ready(function () {
       .eq($(this).index())
       .addClass("consist__info-active");
   });
+
+  $("ul.consist__caption").on("click", "li:not(.consist__type_active)", function () {
+    $(this)
+      .closest("div.consist__second")
+      .find("div.consist__image-wrapper")
+      .removeClass("consist__info-active")
+      .eq($(this).index())
+      .addClass("consist__info-active");
+  });
 });
 
 // фильтр последних работ
@@ -69,35 +78,6 @@ function doAction(value) {
       } //цикл if
     } else {
       work.classList.remove("works__hide");
-    }
-  }
-}
-//-----
-
-// фильтр последних работ
-let articles = document.querySelectorAll(".consist__info");
-// console.log(articles);
-function doAction2(value) {
-  let tipes = document.querySelectorAll(".consist__type");
-  for (let tipe of tipes) {
-    if (value == tipe.value) {
-      tipe.classList.add("consist__type_active");
-    } else {
-      tipe.classList.remove("consist__type_active");
-    }
-  }
-  for (let article of articles) {
-    if (value !== "all") {
-      // console.log(value);
-      // console.log(article.dataset.category);
-      //цикл if
-      if (article.dataset.category !== value) {
-        article.classList.add("consist__hide");
-      } else {
-        article.classList.remove("consist__hide");
-      } //цикл if
-    } else {
-      article.classList.remove("consist__hide");
     }
   }
 }
