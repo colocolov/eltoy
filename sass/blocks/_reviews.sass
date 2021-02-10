@@ -1,0 +1,80 @@
+.reviews
+  background-color: $pink_l
+  padding-top: 120px
+  height: 500px
+  background-image: url(../images/bg/consist_wave_bottom.svg), url(../images/bg/stars.svg)
+  background-repeat: repeat-x, repeat
+  background-position: center bottom, 0 0
+  &__heading
+    margin-bottom: 50px
+  &__tabs
+    position: absolute
+    display: flex
+    justify-content: center
+    top: 110px
+    left: 0
+    right: 0
+  &__tab
+    width: 505px
+    padding: 45px 50px 50px
+    background-color: $bgc
+    box-shadow: 0px 7px 20px #F3ADC8
+    border-radius: 10px
+    &:nth-child(1)
+      margin-right: 20px
+
+  &__profile
+    margin-bottom: 35px
+    display: flex
+    align-items: center
+  &__photo
+    width: 120px
+    height: 120px
+    object-fit: cover
+    border-radius: 50%
+    border: 5px solid $pink
+    margin-right: 16px
+  &__name
+    font-family: "Nunito-Bold"
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+    color: $head
+    margin-bottom: 5px
+  &__info
+    font-family: "Nunito-Light"
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    color: $text
+  &__title
+    position: relative
+    font-style: italic
+    font-weight: 400
+    font-size: 24px
+    line-height: 32px
+    color: $head
+    margin: 0
+    margin-bottom: 20px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      background: url(../images/icons/quote.svg) no-repeat 0 0
+      width: 100px
+      height: 74px
+      z-index: -1
+  &__text
+    font-family: "Nunito-Light"
+    font-weight: 300
+    font-size: 16px
+    line-height: 26px
+    color: $text
+    margin: 0
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+
+.container
+  position: relative

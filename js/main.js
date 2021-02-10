@@ -43,15 +43,6 @@ $(document).ready(function () {
       .eq($(this).index())
       .addClass("consist__info-active");
   });
-
-  $("ul.consist__caption").on("click", "li:not(.consist__type_active)", function () {
-    $(this)
-      .closest("div.consist__second")
-      .find("div.consist__image-wrapper")
-      .removeClass("consist__info-active")
-      .eq($(this).index())
-      .addClass("consist__info-active");
-  });
 });
 
 // фильтр последних работ
