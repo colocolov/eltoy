@@ -1,10 +1,8 @@
 .reviews
-  background-color: $pink_l
   padding-top: 120px
-  height: 500px
-  background-image: url(../images/bg/consist_wave_bottom.svg), url(../images/bg/stars.svg)
-  background-repeat: repeat-x, repeat
-  background-position: center bottom, 0 0
+  padding-bottom: 120px
+  height: 630px
+  background: $pink_l url(../images/bg/stars.svg) repeat 0 0
   &__heading
     margin-bottom: 50px
   &__tabs
@@ -22,7 +20,6 @@
     border-radius: 10px
     &:nth-child(1)
       margin-right: 20px
-
   &__profile
     margin-bottom: 35px
     display: flex
@@ -56,15 +53,16 @@
     color: $head
     margin: 0
     margin-bottom: 20px
-    &::before
+    z-index: 1
+    &::after
       content: ''
       position: absolute
+      z-index: -1
       top: 0
       left: 0
       background: url(../images/icons/quote.svg) no-repeat 0 0
       width: 100px
       height: 74px
-      z-index: -1
   &__text
     font-family: "Nunito-Light"
     font-weight: 300

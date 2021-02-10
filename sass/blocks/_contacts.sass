@@ -1,0 +1,79 @@
+.contacts
+  background: url(../images/bg/consist_wave_bottom.svg), url(../images/bg/faq_wave_top.svg)
+  background-repeat: repeat-x,repeat-x
+  background-position: top center, bottom center
+  padding-top: 180px
+  padding-bottom: 130px
+  &__first
+    display: flex
+    // justify-content: space-between
+  &__image
+    padding-left: 50px
+    margin-right: 170px
+    &-wrapper
+      position: relative
+      width: 430px
+      height: 430px
+      &::before
+        content: ''
+        position: absolute
+        width: 400px
+        height: 400px
+        background: url('../images/blobs/contacts-wrp.svg') no-repeat
+        animation: contacts-wrp 4.5s infinite linear
+    &-fon
+      width: 400px
+      height: 427px
+      object-fit: cover
+  &__clip
+    clip-path: url(#svgContacts)
+  &__heading
+    margin-bottom: 22px
+  &__text
+    margin: 0
+    margin-bottom: 7px
+    font-weight: 400
+    font-size: 20px
+    line-height: 26px
+    color: $text
+  &__phone
+    display: block
+    margin-bottom: 20px
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+    color: $bl
+  &__socials
+    margin-bottom: 20px
+  &__media
+    width: 38px
+    height: 38px
+    &:not(:last-child)
+      margin-right: 20px
+  &__button-phone
+    width: 171px
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    text-align: center
+    color: $text
+    background-color: $bl_l
+    margin-right: 25px
+  &__button-call
+    width: 198px
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 14px
+    line-height: 16px
+  &__confirm
+    display: block
+    margin-top: 4px
+    width: 140px
+    margin-left: 226px
+    font-weight: 300
+    font-size: 8px
+    line-height: 12px
+    text-align: center
+    color: $text
+  &__
+  &__
