@@ -42,6 +42,14 @@ $(document).ready(function () {
       .eq($(this).index())
       .addClass("consist__info-active");
   });
+  // -----
+
+  // faq accordeon
+  $(".faq__title").on("click", function () {
+    $(".faq__item").removeClass("faq__active");
+    $(this).parent().addClass("faq__active");
+  });
+  // -----
 });
 
 // фильтр последних работ

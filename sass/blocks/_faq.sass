@@ -23,32 +23,40 @@
     border-radius: 10px
     &::before
       position: absolute
+      content: ''
       top: 16px
       right: 25px
-      content: ''
-      background: url(../images/icons/open.svg) no-repeat 0 0
+      background: url(../images/icons/plus.svg) no-repeat center center
       height: 34px
-      width: 35px
+      width: 34px
+      border: 2px solid $pink
+      border-radius: 50%
+      background-color: transparent
+      cursor: pointer
+      outline: none
   &__title
     margin: 0
     font-weight: normal
     font-size: 24px
     line-height: 36px
     color: $head
+    cursor: pointer
   &__text
+    display: none
     margin: 0
+    margin-top: 15px
+    margin-bottom: 15px
     font-weight: 300
     font-size: 18px
     line-height: 28px
     color: $text
-  &__active
-    margin-top: 15px
-    margin-bottom: 20px
+  &__item.faq__active
     &::before
-      position: absolute
-      top: 30px
-      right: 31px
-      content: ''
-      // background: url(../images/icons/close.svg) no-repeat 0 0
-      height: 20px
-      width: 20px
+      transition: all 0.5s ease-out
+      transform: rotate(90deg)
+      background: url(../images/icons/arrow-right.svg) no-repeat center center
+      border: 2px solid transparent
+    .faq__text
+      display: block
+    .faq__title
+      margin-top: 15px
