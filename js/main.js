@@ -1,4 +1,3 @@
-// popup окна
 $(document).ready(function () {
   // popup окно
   $(".works__photo-link").magnificPopup({
@@ -72,4 +71,30 @@ function doAction(value) {
     }
   }
 }
+//-----
+
+// слайдер отзывов
+var reviewsSlider = new Swiper(".reviews-slider", {
+  loop: true,
+  autoplay: {
+    delay: 7000,
+  },
+  navigation: {
+    nextEl: ".reviews-button__right",
+    prevEl: ".reviews-button__left",
+    clickable: true,
+  },
+  // отключение прокрутки при наведении мыши
+  on: {
+    init() {
+      this.el.addEventListener("mouseenter", () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener("mouseleave", () => {
+        this.autoplay.start();
+      });
+    },
+  },
+});
 //-----

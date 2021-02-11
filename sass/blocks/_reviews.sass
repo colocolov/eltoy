@@ -6,7 +6,7 @@
   &__heading
     margin-bottom: 50px
   &__tabs
-    position: absolute
+    // position: absolute
     display: flex
     justify-content: center
     top: 110px
@@ -73,6 +73,32 @@
     margin-bottom: 10px
     &:last-child
       margin-bottom: 0
+  &-slider
+    padding-bottom: 40px
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    border: 2px solid $pink
+    fill: $pink
+    width: 56px
+    height: 56px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: transparent
+    cursor: pointer
+    outline: none
+    z-index: 50
+    &:hover
+      border: 2px solid $pink
+      background-color: $pink
+      fill: $bgc
+    &__left
+      left: 0
+    &__right
+      right: 0
 
 .container
   position: relative
