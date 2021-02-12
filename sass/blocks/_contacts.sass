@@ -52,29 +52,43 @@
     &:not(:last-child)
       margin-right: 20px
   &__button-phone
-    width: 171px
+    width: 198px
     font-weight: 400
     font-size: 14px
     line-height: 16px
-    text-align: center
     color: $text
     background-color: $bl_l
-    margin-right: 25px
+    padding: 0 20px
   &__button-call
+    display: block
     width: 198px
     text-transform: uppercase
     font-weight: 600
     font-size: 14px
     line-height: 16px
+    &:hover
+      background-color: $bl_l
+      color: $bl
   &__confirm
     display: block
     margin-top: 4px
     width: 140px
-    margin-left: 226px
+    // margin-left: 226px
     font-weight: 300
     font-size: 8px
     line-height: 12px
     text-align: center
     color: $text
-  &__
-  &__
+  &__form
+    display: flex
+  &_wrp
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin-right: 25px
+    a
+      color: inherit
+      text-decoration: underline
+      &:hover
+        text-decoration: none

@@ -15,17 +15,24 @@
   &__items
     width: 820px
   &__item
-    position: relative
     background-color: $bgc
     padding: 15px 30px
     margin-bottom: 20px
     box-shadow: 0px 7px 20px rgba(94, 189, 228, 0.25)
     border-radius: 10px
+  &__title
+    position: relative
+    margin: 0
+    font-weight: normal
+    font-size: 24px
+    line-height: 36px
+    color: $head
+    cursor: pointer
     &::before
       position: absolute
       content: ''
-      top: 16px
-      right: 25px
+      top: 1px
+      right: 3px
       background: url(../images/icons/plus.svg) no-repeat center center
       height: 34px
       width: 34px
@@ -34,13 +41,6 @@
       background-color: transparent
       cursor: pointer
       outline: none
-  &__title
-    margin: 0
-    font-weight: normal
-    font-size: 24px
-    line-height: 36px
-    color: $head
-    cursor: pointer
   &__text
     display: none
     margin: 0
@@ -51,12 +51,12 @@
     line-height: 28px
     color: $text
   &__item.faq__active
-    &::before
-      transition: all 0.5s ease-out
-      transform: rotate(90deg)
-      background: url(../images/icons/arrow-right.svg) no-repeat center center
-      border: 2px solid transparent
     .faq__text
       display: block
     .faq__title
       margin-top: 15px
+      &::before
+        transition: all 0.5s ease-out
+        transform: rotate(90deg)
+        background: url(../images/icons/arrow-right.svg) no-repeat center center
+        border: 2px solid transparent

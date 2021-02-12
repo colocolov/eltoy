@@ -50,6 +50,27 @@ $(document).ready(function () {
     $(this).parent().addClass("faq__active");
   });
   // -----
+
+  //валидация
+  $(".contacts__button-phone").mask("+373 (00) 000-000");
+
+  // $(".contacts__form").validate({
+  //   errorClass: "invalid",
+  //   rules: {
+  //     phone: {
+  //       required: true,
+  //       minlength: 17,
+  //       maxlength: 17,
+  //     },
+  //   },
+  //   messages: {
+  //     phone: {
+  //       required: "Введите номер телефона",
+  //       minlength: jQuery.validator.format("Требуется минимум 8 цифр!"),
+  //     },
+  //   },
+  // });
+  // -----
 });
 
 // фильтр последних работ
