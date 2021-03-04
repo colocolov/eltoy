@@ -71,6 +71,16 @@ $(document).ready(function () {
   //   },
   // });
   // -----
+
+  //scroll up
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1100) {
+      $(".up").fadeIn();
+    } else {
+      $(".up").fadeOut();
+    }
+  });
+  // -----
 });
 
 // фильтр последних работ
