@@ -23,6 +23,8 @@
   &__title
     position: relative
     margin: 0
+    padding-top: 7px
+    padding-bottom: 7px
     font-weight: normal
     font-size: 24px
     line-height: 36px
@@ -42,17 +44,22 @@
       cursor: pointer
       outline: none
   &__text
-    display: none
     margin: 0
-    margin-top: 15px
-    margin-bottom: 15px
+    visibility: hidden
     font-weight: 300
     font-size: 18px
     line-height: 28px
     color: $text
+    height: 0px
+    opacity: 0
   &__item.faq__active
     .faq__text
-      display: block
+      margin-top: 15px
+      margin-bottom: 15px
+      visibility: visible
+      height: 100%
+      transition: all 0.3s ease-in
+      opacity: 1
     .faq__title
       margin-top: 15px
       &::before
