@@ -119,8 +119,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     delay: 7000,
   },
   navigation: {
-    nextEl: ".reviews-button__right",
-    prevEl: ".reviews-button__left",
+    nextEl: ".reviews-button--right",
+    prevEl: ".reviews-button--left",
     clickable: true,
   },
   // отключение прокрутки при наведении мыши
