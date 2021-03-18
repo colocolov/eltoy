@@ -1,10 +1,25 @@
 @media ( max-width: 992px )
   .container
     max-width: 738px
+  .heading
+    font-size: 32px
+    line-height: 48px
+  .subheading
+    font-size: 24px
+    line-height: 36px
+  .text
+    font-size: 18px
+    line-height: 26px
   .navbar
+    &__top
+      flex-wrap: wrap
     &__menu
-      display: none
+      margin-top: 20px
+      margin-bottom: 0
+      order: 2
+      flex-basis: 100%
   .promo
+    padding-bottom: 0
     &__first
       flex-direction: column
     &__block
@@ -13,8 +28,14 @@
       width: 100%
       font-size: 40px
       line-height: 50px
+      padding-right: 40px
     &__cards
-      top: 350px
+      top: 400px
+    &__card
+      width: 165px
+      padding: 49px 15px 30px 15px
+      &:not(:last-child)
+        margin-right: 15px
     &__image
       margin-left: auto
       width: 49%
@@ -28,3 +49,137 @@
     &_photo
       width: 100%
       height: 100%
+  .about
+    margin-bottom: 99px
+    &__first
+      padding-top: 150px
+      align-items: center
+    &__image
+      width: 49%
+      margin-right: 25px
+      &-fon
+        width: 350px
+        height: 350px
+      &-wrapper
+        width: 350px
+        &::before
+          width: 350px
+          height: 350px
+          animation: about-wrp-media 4.5s infinite linear
+    &__subheading
+      font-size: 22px
+      line-height: 30px
+      margin-bottom: 20px
+  .works
+    &__first
+      padding-bottom: 105px
+    &__photos-all
+      margin-right: -20px
+    &__photos-tabs
+      margin-right: 8px
+    &__photo
+      width: 47%
+      // margin-right: 15px
+      // margin-bottom: 15px
+      &-info
+        opacity: 0.8
+        padding: 30px 45px
+        &:hover
+          opacity: 0.8
+    &__type
+      font-size: 18px
+      margin: 0 10px
+  .consist
+    &__container
+      flex-wrap: wrap
+      padding-top: 47px
+      padding-bottom: 30px
+    &__first
+      margin-bottom: 30px
+      margin-right: 0
+    &__title
+      text-align: center
+    &__descriptions
+      padding-right: 100px
+    &__tabs
+      display: flex
+      justify-content: flex-end
+    &__second
+      margin: 0 auto
+    &__type
+      font-size: 18px
+  .steps
+    &__first
+      padding-bottom: 117px
+      padding-top: 144px
+    &__card
+      width: 200px
+    &__title
+      font-size: 30px
+    &__wrp
+      height: 180px
+  .faq
+    &__first
+      padding-top: 69px
+      padding-bottom: 46px
+    &__items
+      width: 90%
+    &__title
+      padding-right: 38px
+      font-size: 22px
+  .price
+    &__first
+      padding-top: 130px
+    &__card
+      width: 220px
+    &__wrapper
+      width: 220px
+      height: 220px
+      &::before
+        width: 275px
+        height: 275px
+        left: -16px
+        top: 4px
+    &__title
+      font-size: 30px
+      line-height: 40px
+  .reviews
+    padding-top: 60px
+    height: 930px
+    &__tabs
+      flex-direction: column
+      align-items: center
+    &__tab
+      width: 78%
+      &:nth-child(1)
+        margin-right: 0px
+        margin-bottom: 30px
+  .contacts
+    padding-top: 203px
+    padding-bottom: 115px
+    &__first
+      align-items: self-start
+    &__image
+      margin-right: 25px
+      &-wrapper
+        width: 350px
+        height: 350px
+        &::before
+          width: 350px
+          height: 350px
+      &-fon
+        width: 100%
+        height: 100%
+    &__form
+      flex-direction: column
+      align-items: flex-start
+    &__button-wrapper
+      margin-right: 0
+      width: 100%
+      align-items: flex-start
+      &:first-child
+        margin-bottom: 15px
+    &__button-call,
+    &__button-phone,
+    &__confirm
+      width: 80%
