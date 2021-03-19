@@ -145,15 +145,16 @@
       line-height: 40px
   .reviews
     padding-top: 60px
-    height: 930px
     &__tabs
       flex-direction: column
       align-items: center
     &__tab
       width: 78%
-      &:nth-child(1)
-        margin-right: 0px
-        margin-bottom: 30px
+      &:first-child
+        margin-right: 0
+        margin-bottom: 0
+      &:last-child
+        display: none
   .contacts
     padding-top: 203px
     padding-bottom: 115px
