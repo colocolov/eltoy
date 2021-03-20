@@ -4,11 +4,24 @@
   .body
     &_fix
       overflow-y: hidden
+  .logo
+    width: 160px
   .navbar
+    &__top
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      z-index: 100
+      background-color: $bl_l
+      padding: 10px 20px
+      align-items: center
+      // margin: 0 auto
     &__menu
       display: none
 
   .promo
+    margin-top: 79px
     &__block
       margin-bottom: 45px
     &__image
