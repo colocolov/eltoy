@@ -38,22 +38,17 @@
               ><img src="images/logo.png" alt="Логотип: детские игрушки ручной работы" class="image-wrapper"
             /></a>
           </div>
-          <div class="header__menu menu">
-            <div class="menu__icon">
-              <span></span>
-            </div>
-            <nav class="navbar__menu">
-              <ul class="navbar__list">
-                <!-- <li class="navbar__item"><a href="#about" class="navbar__link">Об изделии</a></li> -->
-                <li class="navbar__item"><a href="#my-works" class="navbar__link">Мои работы</a></li>
-                <li class="navbar__item"><a href="#consist" class="navbar__link">Из чего состоит</a></li>
-                <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
-                <li class="navbar__item"><a href="#price" class="navbar__link">Цены</a></li>
-                <li class="navbar__item"><a href="#reviews" class="navbar__link">Отзывы</a></li>
-                <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="navbar__menu">
+            <ul class="navbar__list">
+              <!-- <li class="navbar__item"><a href="#about" class="navbar__link">Об изделии</a></li> -->
+              <li class="navbar__item"><a href="#my-works" class="navbar__link">Мои работы</a></li>
+              <li class="navbar__item"><a href="#consist" class="navbar__link">Из чего состоит</a></li>
+              <li class="navbar__item"><a href="#faq" class="navbar__link">FAQ</a></li>
+              <li class="navbar__item"><a href="#price" class="navbar__link">Цены</a></li>
+              <li class="navbar__item"><a href="#reviews" class="navbar__link">Отзывы</a></li>
+              <li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
+            </ul>
+          </nav>
           <div class="navbar__data">
             <ul class="navbar__list">
               <li class="navbar__item navbar__item-lang">
@@ -160,11 +155,15 @@
           <h2 class="heading works__heading">Мои последние работы</h2>
           <p class="subheading works__subheading">Последние выполненые изделия</p>
           <div class="works__photos">
-            <div class="works__photos-tabs">
-              <button class="works__type works__type_active" value="all" onclick="doAction(this.value)">Все</button>
-              <button class="works__type" value="chewers" onclick="doAction(this.value)">Грызунки</button>
-              <button class="works__type" value="beanbags" onclick="doAction(this.value)">Погремушки</button>
-              <button class="works__type" value="sets" onclick="doAction(this.value)">Наборы</button>
+            <div class="works__wrap">
+              <div class="works__limit">
+                <div class="works__photos-tabs">
+                  <button class="works__type works__type_active" value="all" onclick="doAction(this.value)">Все</button>
+                  <button class="works__type" value="chewers" onclick="doAction(this.value)">Грызунки</button>
+                  <button class="works__type" value="beanbags" onclick="doAction(this.value)">Погремушки</button>
+                  <button class="works__type" value="sets" onclick="doAction(this.value)">Наборы</button>
+                </div>
+              </div>
             </div>
             <div class="works__photos-all">
               <div class="works__photo" data-category="chewers">
@@ -231,12 +230,14 @@
       <div class="container consist__container">
         <div class="consist__first">
           <h2 class="heading consist__title">Что входит в изделие?</h2>
-          <div class="consist__tabs">
-            <ul class="consist__caption">
-              <li class="consist__type consist__type_active">Грызунок</li>
-              <li class="consist__type">Погремушка</li>
-              <li class="consist__type">Игрушка</li>
-            </ul>
+          <div class="consist__wrap">
+            <div class="consist__limit">
+              <ul class="consist__caption">
+                <li class="consist__type consist__type_active">Грызунок</li>
+                <li class="consist__type">Погремушка</li>
+                <li class="consist__type">Игрушка</li>
+              </ul>
+            </div>
           </div>
           <div class="consist__descriptions">
             <div class="consist__info consist__info-active">
@@ -300,32 +301,26 @@
               <div class="steps__wrp">
                 <img src="images/icons/step-1.svg" alt="мобильная связь" class="image-wrapper" />
               </div>
-              <div class="steps__info">
-                <h3 class="steps__title">Шаг 1</h3>
-                <p class="text steps__text">
-                  Вы связываетесь со мной любым удобным Вам способом: Direct Facebook, Instagram, Viber
-                </p>
-              </div>
+              <h3 class="steps__title">Шаг 1</h3>
+              <p class="text steps__text">
+                Вы связываетесь со мной любым удобным Вам способом: Direct Facebook, Instagram, Viber
+              </p>
             </div>
             <!-- /.steps__cars -->
             <div class="steps__card">
               <div class="steps__wrp">
                 <img src="images/icons/step-2.svg" alt="список" class="image-wrapper" />
               </div>
-              <div class="steps__info">
-                <h3 class="steps__title">Шаг 2</h3>
-                <p class="text steps__text">Согласовываем дизайн и состав изделия, определяем сроки и стоимость работы</p>
-              </div>
+              <h3 class="steps__title">Шаг 2</h3>
+              <p class="text steps__text">Согласовываем дизайн и состав изделия, определяем сроки и стоимость работы</p>
             </div>
             <!-- /.steps__cars -->
             <div class="steps__card">
               <div class="steps__wrp">
                 <img src="images/icons/step-3.svg" alt="гео точка" class="image-wrapper" />
               </div>
-              <div class="steps__info">
-                <h3 class="steps__title">Шаг 3</h3>
-                <p class="text steps__text">Выполняю работу и оформляю заказ. Согласовываем доставку. Все готово!</p>
-              </div>
+              <h3 class="steps__title">Шаг 3</h3>
+              <p class="text steps__text">Выполняю работу и оформляю заказ. Согласовываем доставку. Все готово!</p>
             </div>
             <!-- /.steps__cars -->
           </div>
@@ -396,11 +391,9 @@
                   </defs>
                 </svg>
               </div>
-              <div class="price__info">
-                <h3 class="price__title">Грызунок</h3>
-                <p class="text price__text">С индивидаульным именем и набором фигурок</p>
-                <span class="price__coast">200 леев</span>
-            </div>
+              <h3 class="price__title">Грызунок</h3>
+              <p class="text price__text">С индивидаульным именем и набором фигурок</p>
+              <span class="price__coast">200 леев</span>
             </div>
             <!-- /.price__cars -->
             <div class="price__card">
@@ -416,11 +409,9 @@
                   </defs>
                 </svg>
               </div>
-              <div class="price__info">
-                <h3 class="price__title">Игрушка</h3>
-                <p class="text price__text">С индивидаульным именем и набором фигурок</p>
-                <span class="price__coast">180 леев</span>
-            </div>
+              <h3 class="price__title">Игрушка</h3>
+              <p class="text price__text">С индивидаульным именем и набором фигурок</p>
+              <span class="price__coast">180 леев</span>
             </div>
             <!-- /.price__cars -->
             <div class="price__card">
@@ -436,11 +427,9 @@
                   </defs>
                 </svg>
               </div>
-              <div class="price__info">
-                <h3 class="price__title">Погремушка</h3>
-                <p class="text price__text">С индивидаульным именем и набором фигурок</p>
-                <span class="price__coast">120 леев</span>
-            </div>
+              <h3 class="price__title">Погремушка</h3>
+              <p class="text price__text">С индивидаульным именем и набором фигурок</p>
+              <span class="price__coast">120 леев</span>
             </div>
             <!-- /.price__cars -->
           </div>

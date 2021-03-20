@@ -57,12 +57,15 @@
     &__title
       font-size: 16px
       line-height: 24px
-    &__photos-tabs
-      overflow-x: auto
-      // padding: 15px
-      // flex-wrap: wrap
-    &__type
-      // padding: 10px 0
+    &__wrap
+      overflow-x: hidden
+      overflow-y: hidden
+    &__limit
+      max-width: 390px
+      overflow-x: scroll
+      padding-bottom: 20px
+      margin-bottom: -20px
+      mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .10) 0px, #F3FAFF 15px, #F3FAFF calc(100% - 25px), rgba(0, 0, 0, .20) calc(100% - 7px), transparent)
 
   .consist
     &__second
@@ -79,8 +82,17 @@
       &-fon
         width: 300px
         height: 300px
-    &__caption
-      flex-wrap: wrap
+    &__descriptions
+      padding-right: 0
+    &__wrap
+      overflow-x: hidden
+      overflow-y: hidden
+    &__limit
+      max-width: 320px
+      overflow-x: scroll
+      padding-bottom: 20px
+      margin-bottom: -20px
+      mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .10) 0px, #F3FAFF 15px, #F3FAFF calc(100% - 25px), rgba(0, 0, 0, .20) calc(100% - 7px), transparent)
 
   .steps
     &__first
@@ -109,6 +121,7 @@
     &__wrapper
       margin-bottom: 15px
       &::before
+        animation: none
         top: -10px
     &__info
       width: 85%
