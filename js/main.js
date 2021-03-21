@@ -137,3 +137,22 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 //-----
+
+//мобильное меню
+const iconMenu = document.querySelector(".navbar__icon");
+const menuBody = document.querySelector(".navbar__menu");
+if (iconMenu) {
+  iconMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    menuBody.classList.toggle("_active");
+  });
+  if (iconMenu.classList.contains("_active")) {
+    menuBody.addEventListener("click", function (e) {
+      console.log("yes");
+      document.body.classList.remove("_lock");
+      iconMenu.classList.remove("_active");
+      menuBody.classList.remove("_active");
+    });
+  }
+}
