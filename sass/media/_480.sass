@@ -5,9 +5,10 @@
     margin-top: 50px
 
   .navbar
+    &__top
+      height: 73px
     &__logo
       order: 0
-      // margin-top: 20px
     &__data
       justify-content: space-between
       flex-direction: column
@@ -30,14 +31,15 @@
         &::before
           width: 300px
           height: 300px
+          animation: none
       &-fon
         width: 300px
         height: 300px
+        animation: none
 
   .about
     margin-bottom: 50px
     &__image
-      // margin: 0 auto
       width: 320px
       height: 320px
       margin-top: 15px
@@ -47,9 +49,12 @@
         &::before
           width: 300px
           height: 300px
+          top: 10px
+          animation: none
       &-fon
         width: 300px
         height: 300px
+        animation: none
 
   .works
     &__photo
@@ -77,11 +82,12 @@
         &::before
           width: 330px
           height: 330px
-          top: 5px
-          left: -22px
+          left: -12px
+          animation: none
       &-fon
         width: 300px
         height: 300px
+        animation: none
     &__descriptions
       padding-right: 0
     &__wrap
@@ -170,6 +176,8 @@
           width: 300px
           height: 300px
           left: 10px
+          top: 25px
+          animation: none
       &-fon
         width: 300px
         height: 300px

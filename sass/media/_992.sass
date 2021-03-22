@@ -4,6 +4,7 @@
   .heading
     font-size: 32px
     line-height: 48px
+    letter-spacing: 0
   .subheading
     font-size: 24px
     line-height: 36px
@@ -13,7 +14,7 @@
   .navbar
     &__top
       flex-wrap: wrap
-    &__menu
+    &__nav
       margin-top: 20px
       margin-bottom: 0
       order: 2
@@ -82,9 +83,8 @@
       margin-right: 8px
     &__photo
       width: 47%
-      // margin-right: 15px
-      // margin-bottom: 15px
       &-info
+        height: 50%
         opacity: 0.8
         padding: 30px 45px
         &:hover
@@ -193,3 +193,11 @@
     &__button-phone,
     &__confirm
       width: 80%
+    &__button-call:hover
+      background-color: $bl
+
+  .footer
+    &__button:hover
+      background-color: $bl
+    &__item
+      opacity: 1
