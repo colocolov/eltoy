@@ -1,4 +1,6 @@
+node_modules/
 source/
 admins/
-tl.php
+eltoy.fun/tl.php
+eltoy.fun/send.php
 .git/

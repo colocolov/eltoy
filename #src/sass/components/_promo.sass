@@ -1,0 +1,84 @@
+.promo
+  position: relative
+  background: $bl-l url(../images/bg/stars.svg) repeat 0 0
+  padding-top: 57px
+  padding-bottom: 65px
+  &__first
+    display: flex
+    justify-content: space-between
+    align-items: start
+  &__title
+    width: 535px
+    margin: 0
+    margin-bottom: 35px
+    font-family: "Exo2-Bold", sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 58px
+    line-height: 65px
+    letter-spacing: 0.03em
+    color: $bl
+  &__cards
+    position: absolute
+    top: 470px
+    display: flex
+  &__card
+    width: 190px
+    padding: 46px 13px 35px 24px
+    background: url('../images/bg/promo_card.svg') no-repeat top center
+    box-shadow: 10px 18px 20px rgba(94, 189, 228, 0.26)
+    border-radius: 10px
+    &:not(:last-child)
+      margin-right: 25px
+    &-title
+      display: block
+      margin-bottom: 18px
+      font-weight: 400
+      font-size: 18px
+      line-height: 24px
+      text-transform: uppercase
+      color: $head
+    &-description
+      margin: 0
+      font-weight: 300
+      font-size: 16px
+      line-height: 24px
+      color: $text
+  &__description
+    margin: 0
+    padding-right: 57px
+    font-style: normal
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    color: $bl
+  &__icon
+    margin: 0 auto
+    margin-bottom: 21px
+    width: 90px
+    height: 90px
+  &__image
+    margin-top: 25px
+    margin-right: 50px
+    width: 600px
+    height: 600px
+    position: relative
+    &-wrapper
+      &::before
+        content: ''
+        position: absolute
+        top: -30px
+        width: 600px
+        height: 600px
+        background-image: url('../images/blobs/promo-wrp.svg')
+        animation: promo-wrp 4.5s infinite linear
+    &-fon
+      width: 600px
+      height: 600px
+      object-fit: cover
+      animation: fon 2s 1 ease-out
+  &_photo
+    width: 597px
+    height: 597px
+.clip
+  clip-path: url(#svgPromo)
